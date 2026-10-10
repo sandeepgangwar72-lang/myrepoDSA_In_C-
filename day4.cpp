@@ -1,80 +1,20 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
+
 int main()
 {
-    // *
-    // **
-    // ***
-    // ****
-    // *****
-
-
-    // int num = 5;
-    // for (int i = 1; i <= num; i++)
-    // {
-    //     for (int j = 1; j <= i; j++)
-    //     {
-    //         cout << "*";
-    //     }
-    //     cout << endl;
-    // }
-
-      
-        //      *
-        //     **
-        //    ***
-        //   ****
-        //  *****
-
-
-        // int num = 5;
-        // for (int i = 1; i <= num; i++)
-        // {
-        //     for (int j = 1; j <= num - i; j++)
-        //     {
-        //         cout << " ";
-        //     }
-        // for (int k = 1; k <= i; k++)
-        // {
-        //     cout << "*";
-        // }
-        // cout << endl;
-        // }
-
-
-
-        // *****
-        // ****
-        // ***
-        // **
-        // *
-
-        // int num = 5;
-        // for (int i = 1; i <= num; i++)
-        // {
-        //     for (int j = 1; j <= num - i + 1; j++)
-        //     {
-        //         cout << "*";
-        //     }
-        //     cout << endl;
-        // }
-
-
-        // 1
-        // 12
-        // 123
-        // 1234
-        // 12345
-
-        // int num = 5;
-        // for (int i = 1; i <= num; i++)
-        // {
-        //     for (int j = 1; j <= i; j++)
-        //     {
-        //         cout << j;
-        //     }
-        //     cout << endl;
-        // }
+    // 6. Count lines.
+    ifstream file1("data1.txt");
+    string line;
+    int count = 0;
+    while(getline(file1, line))
+    {
+        count++;
+    }
+    file1.close();
+    cout << "Total no of lines: " << count << endl;
 
     return 0;
+  
 }

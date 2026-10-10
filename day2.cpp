@@ -1,31 +1,33 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    // for (int i = 1; i <= 100; i++)
-    // {
-    // cout << i << " ";
-    // }
+    // 1. Print value using pointer.
+    //  int a = 5;
+    //  int b = 6;
+    //  int *newptr = &a;
+    //  int *ptr = &b;
 
+    // cout << *(newptr) << endl;
+    // cout << *(ptr) << endl;
 
-    // for (int i = 1; i <= 200; i++)
-    // {
-    //     if (i%2 == 1)
-    //     {
-    //         cout << i << " ";
-    //     }
-    // }
+    // 3. Sum using pointers.
+    // int a = 10;
+    // int b = 20;
+    // int *newptr = &a;
+    // int *ptr = &b;
+    // int sum = *newptr + *ptr;
+    // cout << "The sum is: " << sum << endl;
 
-
-    int n, sum = 0;
-    cout << "Enter a Number :" << endl;
-    cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        sum += i;
-    }
-    cout << "Sum is :" << sum << endl;
-    
+    // 6. Pointer arithmetic examples.
+    // int arr[] = {10, 14, 4, 8, 10};
+    // int *ptr = arr;
+    // cout << *ptr << endl;
+    // cout << *(ptr+1) << endl;
+    // cout << *(ptr+2) << endl;
+    // cout << *(ptr+3) << endl;
+    // cout << *(ptr+4) << endl;
 
     return 0;
 }
